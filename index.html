@@ -131,15 +131,21 @@
 
                 <div class="uni-project active" id="ASL">
                     <h3>ASL Recognition Neural Network</h3>
-                    <span class="course-tag">C++ &middot; OpenMP &middot; MPI</span>
-                    <p>A neural network built from scratch in C++ that classifies American Sign Language hand signs from
-                        images.</p>
+                    <span class="course-tag">COIS 4350H &mdash; High Performance Computing</span>
+                    <div class="meta"><strong>Contributor:</strong> Samaksh Monga &nbsp;&nbsp;<strong>Tech:</strong> C++,
+                        OpenMP, MPI, OpenCV</div>
+                    <p>A feedforward neural network (784&ndash;512&ndash;24) built from scratch in C++, with no ML frameworks,
+                        that classifies American Sign Language hand signs from the Sign Language MNIST dataset.</p>
                     <h4>Key Highlights</h4>
                     <ul>
-                        <li><strong>Scale:</strong> 24 ASL sign classes across 27,000+ images.</li>
-                        <li><strong>Accuracy:</strong> 92%+ classification accuracy.</li>
-                        <li><strong>Performance:</strong> Training parallelized with OpenMP to reduce computation time.</li>
+                        <li><strong>Scale:</strong> 24 ASL letter classes, trained on the full 27,455-image training set.</li>
+                        <li><strong>Accuracy:</strong> Up to 96.8% training accuracy.</li>
+                        <li><strong>Parallelization:</strong> Sequential baseline, an OpenMP multithreaded version, and an MPI
+                            distributed version with per-epoch weight averaging via MPI_Allreduce.</li>
+                        <li><strong>Inference:</strong> OpenCV-based image classifier returning top predictions.</li>
                     </ul>
+                    <p><a href="https://github.com/kruzxee/projects-university/blob/main/ASL%20Recognition%20Neural%20Network/ASL-Recognition-Project-Report.pdf"
+                            target="_blank" style="color:#00aaff">Read the project report &rarr;</a></p>
                 </div>
 
                 <div class="uni-project" id="COIS3560">
